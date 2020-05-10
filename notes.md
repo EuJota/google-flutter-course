@@ -11,7 +11,7 @@ não se encaixam nestes grupos, mas fica pra depois
     Text, RaisedButton, Switch....
 
 - A base da aplicação é o Scaffod
-    - Dentro do Scaffod podemos ter widgets como o appbar, container
+    - Dentro do Scaffold podemos ter widgets como o appbar, container
         - Dentro dos containers podemos ter inúmeros elementos e assim sucessivamente
 
 
