@@ -4,7 +4,10 @@
 
 ### O que eu aprendi neste curso: 
 - Tudo em flutter é um widget
-- Os widgets são organizados seguindo um esquema de árvore 
+- Os widgets são organizados seguindo um esquema de árvore
+- O arquivo pubspec.yaml é baseado em identação para reconhecer as configurações
+- Posicionamento de Widgets
+- Scaffold
 
 
 ### What i'm learning in this course:
