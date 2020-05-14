@@ -44,3 +44,24 @@ Scaffold( - elemento raiz
     Para posicionar um widget dentro de outro é necessário chamar o widget de posicionamento, por exemplo, para centralizar um widget dentro de outro, colocamos o widget Center() dentro do elemento pai, e dentro do widget "center", colocamos o elemento que vai ficar centralizado. Ou voce pode aplenas clicar no elemento e com alt+enter selecionar a alteração de posicionamento desejada asldka.
 
 - Mais sobre o Scaffold: O scaffold é um widget que nos fornece inúmeras ferramentas para implementar a estrutura básica de um app. Podemos ter por exemplo um appbar, bottomNavigationBars, floatingButtons e mais. Mais detalhes sobre as funcionalidades do scaffold [aqui](https://medium.com/flutterdevs/know-your-widgets-scaffold-in-flutter-292b8bc1281)
+
+- Hot Reload:
+    Mantem o estado atual da aplicação, é vantajoso para testar mudanças de interface e com
+    portamentos da tela
+
+- Hot Restart: 
+    Reinicia o estado da aplicação junto com todas as mudanças
+
+
+### Stateless
+
+
+### Stateful
+
+- Container: 
+    Similar a uma div do desenvolvimento web.
+    Um container pode ter apenas um child
+    saber mais sobre container na documentação
+
+    SafeArea: É utilizado dentro do container para manter os outros widgets dentro da área 
+    utilizável do celular, seja ele qual for
