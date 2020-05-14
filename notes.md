@@ -1,3 +1,4 @@
+## Widgets: 
 - Podemos classificar os widgets em 2 grupos principais: Layout e UI. Tem outros widgets que 
 não se encaixam nestes grupos, mas fica pra depois
 
@@ -15,22 +16,22 @@ não se encaixam nestes grupos, mas fica pra depois
         - Dentro dos containers podemos ter inúmeros elementos e assim sucessivamente
 
 
-Ex básico em analogia a árvores:
+Ex básico em analogia a árvores: - Colocar uma imagem aqui fica melhor
 
 Scaffold( - elemento raiz
-    appBar: AppBar(), - 1º elemento filho do scaffold
-    body: Container( - 2º elemento filho do scaffold
-        child: Column( - 1º elemento filho do container
-            children [ - 1º elemento filho do child Column
-                Row( - 1º elemento do filho children
-                    Text(), - 1º elemento do filho Row
-                    Icon(), - 2º elemento do filho Row
-                ),
-                Text(), - 2º elemento filho do children
-            ]
-        )
-    ),
-)
+    <br>appBar: AppBar(), - 1º elemento filho do scaffold
+    <br>body: Container( - 2º elemento filho do scaffold
+        <br>child: Column( - 1º elemento filho do container
+            <br>children [ - 1º elemento filho do child Column
+                <br>Row( - 1º elemento do filho children
+                    <br>    Text(), - 1º elemento do filho Row
+                    <br>    Icon(), - 2º elemento do filho Row
+                <br>),
+                <br>Text(), - 2º elemento filho do children
+            <br>]
+        <br>)
+    <br>),
+<br>)
 
 
 - Mais sobre os widgets: 
