@@ -66,3 +66,9 @@ Scaffold( - elemento raiz
 
     SafeArea: É utilizado dentro do container para manter os outros widgets dentro da área 
     utilizável do celular, seja ele qual for
+
+- Columns e Rows: 
+    Columns são widgets que permitem organizar uma lista de widgets childs na vertical, que permite organizar uma lista de widgets childs na horizontal
+    Justamente por poder utilizar vários childs, os widgets filhos das rows e columns são chamados de children no código.
+    Lembrando que é possível fazer composições entre rows e columns.
+ 
