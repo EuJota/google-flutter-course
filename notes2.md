@@ -23,3 +23,45 @@ class MyApp extends StatelessWidget {
 exemplo:
     stateless -> Text (não se pode mudar um text)
     stateful -> TextField (dá pra alterar o text field digitando e tal)
+
+### Exemplo básico de como trabalhar com os estilização fundamental de rows e columns
+  class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.teal,
+        body: SafeArea(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Container(
+                width: 100.0,
+                color: Colors.red,
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Container(
+                    height: 100.0,
+                    width: 100.0,
+                    color: Colors.yellow,
+                  ),
+                  Container(
+                    height: 100.0,
+                    width: 100.0,
+                    color: Colors.green,
+                  ),
+                ]
+              ),
+              Container(
+                width: 100.0,
+                color: Colors.blue,
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
