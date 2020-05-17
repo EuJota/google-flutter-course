@@ -11,40 +11,18 @@ não se encaixam nestes grupos, mas fica pra depois
     São aqueles que estão visíveis ao usuário. No flutter tem centenas desses widgets (colocar link), alguns são:
     Text, RaisedButton, Switch....
 
-- A base da aplicação é o Scaffod
-    - Dentro do Scaffold podemos ter widgets como o appbar, container
-        - Dentro dos containers podemos ter inúmeros elementos e assim sucessivamente
-
-
-Ex básico em analogia a árvores: - Colocar uma imagem aqui fica melhor
-
-Scaffold( - elemento raiz
-    <br>appBar: AppBar(), - 1º elemento filho do scaffold
-    <br>body: Container( - 2º elemento filho do scaffold
-        <br>child: Column( - 1º elemento filho do container
-            <br>children [ - 1º elemento filho do child Column
-                <br>Row( - 1º elemento do filho children
-                    <br>    Text(), - 1º elemento do filho Row
-                    <br>    Icon(), - 2º elemento do filho Row
-                <br>),
-                <br>Text(), - 2º elemento filho do children
-            <br>]
-        <br>)
-    <br>),
-<br>)
-
-
 - Mais sobre os widgets: 
     Determinados widgets tem propriedades que voce pode acessar e montar o seu layout,
     alguns widgets tem propriedades como title, backgroundcolor, outros tem como propriedades outros widgets.
 
-- Para adicionar uma imagem que esteja na pasta do projeto usa-se a propriedade AssetImage, que é uma
-    das propriedades do widget Image, bem como para acessar imagens externas existem outras propriedades como NetworkImage.
+- Arquivos externos: 
+    Para adicionar um arquivo externo (imagens, fontes) podemos colocar esses arquivos definidos no pubspec ou carregar arquivos diretamente da web.
 
 - Posicionamento de widgets:
-    Para posicionar um widget dentro de outro é necessário chamar o widget de posicionamento, por exemplo, para centralizar um widget dentro de outro, colocamos o widget Center() dentro do elemento pai, e dentro do widget "center", colocamos o elemento que vai ficar centralizado. Ou voce pode aplenas clicar no elemento e com alt+enter selecionar a alteração de posicionamento desejada asldka.
+    Para posicionar um widget dentro de outro é necessário chamar o widget de posicionamento, por exemplo, para centralizar um widget dentro de outro, colocamos o widget Center() dentro do elemento pai, e dentro do widget "center", colocamos o elemento que vai ficar centralizado. Ou voce pode apenas clicar no elemento e com alt+enter selecionar a alteração de posicionamento desejada asldka.
 
-- Mais sobre o Scaffold: O scaffold é um widget que nos fornece inúmeras ferramentas para implementar a estrutura básica de um app. Podemos ter por exemplo um appbar, bottomNavigationBars, floatingButtons e mais. Mais detalhes sobre as funcionalidades do scaffold [aqui](https://medium.com/flutterdevs/know-your-widgets-scaffold-in-flutter-292b8bc1281)
+- Mais sobre o Scaffold: 
+    O scaffold é um widget que nos fornece inúmeras ferramentas para implementar a estrutura básica de um app. Podemos ter por exemplo um appbar, bottomNavigationBars, floatingButtons e mais. Mais detalhes sobre as funcionalidades do scaffold [aqui](https://medium.com/flutterdevs/know-your-widgets-scaffold-in-flutter-292b8bc1281)
 
 - Hot Reload:
     Mantem o estado atual da aplicação, é vantajoso para testar mudanças de interface e com
@@ -52,12 +30,6 @@ Scaffold( - elemento raiz
 
 - Hot Restart: 
     Reinicia o estado da aplicação junto com todas as mudanças
-
-
-### Stateless
-
-
-### Stateful
 
 - Container: 
     Similar a uma div do desenvolvimento web.
@@ -72,10 +44,20 @@ Scaffold( - elemento raiz
     Justamente por poder utilizar vários childs, os widgets filhos das rows e columns são chamados de children no código.
     Lembrando que é possível fazer composições entre rows e columns.
 
-
 - Divider class
 
-- EdgeInsets
+- EdgeInsets:
+    Organiza o padding do widget da forma que for melhor para o projeto. Existem várias propriedades do edgeinsets e cada uma pode ser utilizada para a melhor ocasião.
 
 - Expanded class
-    Um widget excelente para organizar o espaço dos widgets children dentro das rows, columns ou flex
+    Um widget excelente para organizar o espaço dos widgets children dentro das rows, columns ou flex.
+
+### Stateless
+    São widgets que mantém os seus estados inalterados. Por exemplo um título na página, um texto, ou qualquer coisa do tipo.
+
+### Stateful
+    Já o stateful guarda widgets que alteram estado. Um botão que muda de cor no clique, uma informação que é atualizada com clique. Por definição, os widgets são imutáveis no flutter, mas quando utilizado o widget stateful é criado um objeto do tipo state, e isso permite que haja mutabilidade em determinados widgets.
+
+- SetState:
+    O setState é um método que só pode ser utilizado nos widgets do tipo stateful, pois apenas eles possuem a propriedade de mutabilidade. Esse método permite, como o nome diz, alterar o estado dos widgets. Por exemplo, alterar o valor de uma váriável ao clicar em um botão. Cada vez que o setstate é chamado, ele recria o widget referente com o novo valor.
+    Mais sobre o state e seu ciclo de vida [aqui](https://api.flutter.dev/flutter/widgets/State-class.html).
