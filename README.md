@@ -8,6 +8,9 @@
 - O arquivo pubspec.yaml é baseado em identação para reconhecer as configurações
 - Posicionamento de Widgets
 - Scaffold
+- Como posicionar rows e colums
+- Lidar com arquivos externos como imagens e fontes
+- Shortcuts de widgets
 
 
 ### What i'm learning in this course:
