@@ -76,3 +76,6 @@ Scaffold( - elemento raiz
 - Divider class
 
 - EdgeInsets
+
+- Expanded class
+    Um widget excelente para organizar o espaço dos widgets children dentro das rows, columns ou flex
