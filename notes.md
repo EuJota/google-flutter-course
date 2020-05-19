@@ -49,6 +49,9 @@ não se encaixam nestes grupos, mas fica pra depois
 - EdgeInsets:
     Organiza o padding do widget da forma que for melhor para o projeto. Existem várias propriedades do edgeinsets e cada uma pode ser utilizada para a melhor ocasião.
 
+- maincrossAxisAlignment e crossAxisAlignment
+    preenchimento e organização das columns e rows na tela. Cuida do espaçamento entre itens, posicionamento na tela, etc.
+
 - Expanded class
     Um widget excelente para organizar o espaço dos widgets children dentro das rows, columns ou flex.
 
@@ -61,3 +64,6 @@ não se encaixam nestes grupos, mas fica pra depois
 - SetState:
     O setState é um método que só pode ser utilizado nos widgets do tipo stateful, pois apenas eles possuem a propriedade de mutabilidade. Esse método permite, como o nome diz, alterar o estado dos widgets. Por exemplo, alterar o valor de uma váriável ao clicar em um botão. Cada vez que o setstate é chamado, ele recria o widget referente com o novo valor.
     Mais sobre o state e seu ciclo de vida [aqui](https://api.flutter.dev/flutter/widgets/State-class.html).
+
+- Parâmetros nomeados:
+    Nomear os parâmetros que vão ser utilizados por outras funções é uma boa. Funciona segundo esquema de chave valor em um json.
