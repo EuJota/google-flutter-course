@@ -67,3 +67,4 @@ não se encaixam nestes grupos, mas fica pra depois
 
 - Parâmetros nomeados:
     Nomear os parâmetros que vão ser utilizados por outras funções é uma boa. Funciona segundo esquema de chave valor em um json.
+
